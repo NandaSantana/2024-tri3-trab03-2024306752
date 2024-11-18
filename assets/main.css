@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  header {
+    grid-area: header;
+   }
+   
+   aside {
+     grid-area: aside;
+   }
+   
+   main {
+     grid-area: content;
+   }
+   
+   footer {
+     grid-area: footer;
+   }
+  
+  body {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    border: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 1fr 100px;
+    grid-template-areas: "header" "aside" "content" "footer";
+  }
+  
+  header {
+    text-align: center;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: lightpink;
+  }
+
+  
+ aside{
+    background-color: lightpink;
+    color: white;
+    padding: 20px;
+    min-height: 200vw;
+    min-height: 100vh;
+    top: 0;
+}
+
+
+aside a:hover {
+    background-color: darkmagenta;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+  
+  main {
+    flex: 1;
+    margin-left: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: whitesmoke;
+    padding: 1rem;
+  }
+
+  .galeria {
+    border: 2px solid pink;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+}
+
+.galeria img {
+    width: 10vw;
+    height: 20vh;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+  
+  footer {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: lightpink;
+    
+ 
+  }
